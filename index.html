@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebP Converter</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convert Multiple PNG/JPG to WebP</h1>
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/png, image/jpeg, image/jpg"
+        multiple
+      />
+      <button id="convertButton" disabled>Convert to WebP</button>
+      <div id="previewContainer"></div>
+      <a id="downloadLink" href="#" download="images.zip" style="display: none"
+        >Download ZIP</a
+      >
+      <p class="message">
+        Upload multiple PNG or JPG images to convert them to WebP format.
+      </p>
+
+      <p style="text-align: end">
+        Made with ❤️ by
+        <a
+          href="https://mohamedfahmy.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mohamed Fahmy</a
+        >
+      </p>
+    </div>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
